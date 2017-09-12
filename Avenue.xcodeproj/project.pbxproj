@@ -59,6 +59,7 @@
 		A282F4DE1F68063400444A21 /* AvenueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvenueUITests.swift; sourceTree = "<group>"; };
 		A282F4E01F68063400444A21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2F0AB501F6810540011C197 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+		A2F0AB531F681E9C0011C197 /* Savoye LET.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Savoye LET.ttc"; sourceTree = "<group>"; };
 		A3CCB4E30F5A7A15CC1033BA /* Pods_AvenueTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvenueTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C070675371A65406951C488D /* Pods-AvenueUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvenueUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AvenueUITests/Pods-AvenueUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D6255642562F7C90C2BE7ADA /* Pods_Avenue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Avenue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +138,7 @@
 				A2F0AB501F6810540011C197 /* LoginScreenViewController.swift */,
 				A282F4C21F68063400444A21 /* Main.storyboard */,
 				A282F4C51F68063400444A21 /* Assets.xcassets */,
+				A2F0AB521F681E8A0011C197 /* fonts */,
 				A282F4C71F68063400444A21 /* LaunchScreen.storyboard */,
 				A282F4CA1F68063400444A21 /* Info.plist */,
 			);
@@ -159,6 +161,14 @@
 				A282F4E01F68063400444A21 /* Info.plist */,
 			);
 			path = AvenueUITests;
+			sourceTree = "<group>";
+		};
+		A2F0AB521F681E8A0011C197 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A2F0AB531F681E9C0011C197 /* Savoye LET.ttc */,
+			);
+			name = fonts;
 			sourceTree = "<group>";
 		};
 		C716AF7B7F17DBF7B508A9FE /* Frameworks */ = {

@@ -9,6 +9,38 @@
 import UIKit
 import Pastel
 
+@IBDesignable extension UIButton {
+    
+    @IBInspectable var borderWidth: CGFloat {
+        set {
+            layer.borderWidth = newValue
+        }
+        get {
+            return layer.borderWidth
+        }
+    }
+    
+    @IBInspectable var cornerRadius: CGFloat {
+        set {
+            layer.cornerRadius = newValue
+        }
+        get {
+            return layer.cornerRadius
+        }
+    }
+    
+    @IBInspectable var borderColor: UIColor? {
+        set {
+            guard let uiColor = newValue else { return }
+            layer.borderColor = uiColor.cgColor
+        }
+        get {
+            guard let color = layer.borderColor else { return nil }
+            return UIColor(cgColor: color)
+        }
+    }
+}
+
 class LoginScreenViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -18,15 +50,18 @@ class LoginScreenViewController: UIViewController {
         
         // Custom Direction
         pastelView.startPastelPoint = .bottomLeft
-        pastelView.endPastelPoint = .topRight
+        pastelView.endPastelPoint = .topLeft
         
         // Custom Duration
         pastelView.animationDuration = 3.0
         
         // Custom Color
-        pastelView.setColors([UIColor(red: 71/255, green: 0/255, blue: 0/255, alpha: 1.0),
-                              UIColor(red: 5/255, green: 0/255, blue: 1/255, alpha: 1.0),
-                              UIColor(red: 71/255, green: 0/255, blue: 0/255, alpha: 1.0)])
+        pastelView.setColors([UIColor(red: 123/255, green: 0/255, blue: 0/255, alpha: 1.0),
+                              UIColor(red: 100/255, green: 0/255, blue: 0/255, alpha: 1.0),
+                              UIColor(red: 32/255, green: 0/255, blue: 0/255, alpha: 1.0),
+                              UIColor(red: 90/255, green: 0/255, blue: 0/255, alpha: 1.0),
+                              UIColor(red: 58/255, green: 0/255, blue: 0/255, alpha: 1.0)])
+
         
         pastelView.startAnimation()
         view.insertSubview(pastelView, at: 0)
