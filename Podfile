@@ -13,6 +13,9 @@ target 'Avenue' do
   end
 	
 	pod "Pastel"
+	pod ‘FBSDKCoreKit’
+	pod ‘FBSDKLoginKit’
+	pod ‘FBSDKShareKit’
 
   target 'AvenueUITests' do
     inherit! :search_paths

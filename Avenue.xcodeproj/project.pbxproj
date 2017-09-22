@@ -132,11 +132,11 @@
 		A282F4BB1F68063400444A21 /* Avenue */ = {
 			isa = PBXGroup;
 			children = (
+				A282F4C21F68063400444A21 /* Main.storyboard */,
+				A2F0AB501F6810540011C197 /* LoginScreenViewController.swift */,
 				A282F4BC1F68063400444A21 /* AppDelegate.swift */,
 				A282F4BE1F68063400444A21 /* FirstViewController.swift */,
 				A282F4C01F68063400444A21 /* SecondViewController.swift */,
-				A2F0AB501F6810540011C197 /* LoginScreenViewController.swift */,
-				A282F4C21F68063400444A21 /* Main.storyboard */,
 				A282F4C51F68063400444A21 /* Assets.xcassets */,
 				A2F0AB521F681E8A0011C197 /* fonts */,
 				A282F4C71F68063400444A21 /* LaunchScreen.storyboard */,
