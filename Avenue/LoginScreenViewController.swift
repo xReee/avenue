@@ -10,6 +10,7 @@ import UIKit
 import Pastel
 import FBSDKCoreKit
 import FBSDKLoginKit
+import Firebase
 
 
 @IBDesignable extension UIButton {
@@ -48,6 +49,9 @@ class LoginScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        let loginButton = FBSDKLoginButton()
+//        loginButton.delegate = self as! FBSDKLoginButtonDelegate
         
         let pastelView = PastelView(frame: view.bounds)
         
@@ -98,7 +102,7 @@ class LoginScreenViewController: UIViewController {
             FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, picture.type(large), email"]).start(completionHandler: { (connection, result, error) -> Void in
                 if (error == nil){
                     //everything works print the user data
-                    print("\(result)")
+                    print("\(String(describing: result))")
                 }
             })
         }

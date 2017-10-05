@@ -111,7 +111,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1A-7a-vMA">
-                                <rect key="frame" x="32.5" y="343.5" width="310.5" height="47"/>
+                                <rect key="frame" x="32.5" y="347" width="310.5" height="53"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <state key="normal" title="Entrar">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -132,13 +132,13 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esqueceu seus dados de login? Obtenha ajuda para entrar." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQe-qf-TTC">
-                                <rect key="frame" x="54.5" y="393.5" width="265" height="47"/>
+                                <rect key="frame" x="54.5" y="407" width="265" height="53"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHj-Ao-RyK">
-                                <rect key="frame" x="32.5" y="510" width="310.5" height="47"/>
+                                <rect key="frame" x="32.5" y="507" width="310.5" height="53"/>
                                 <state key="normal" title="Entre com o Facebook"/>
                                 <connections>
                                     <action selector="btnFacebookLogin:" destination="co0-nb-vvR" eventType="touchUpInside" id="tqN-7I-cNg"/>
@@ -155,37 +155,50 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VQH-6R-vbu">
-                                <rect key="frame" x="32.5" y="280" width="310.5" height="47"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.26517016269999999" colorSpace="calibratedRGB"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VQH-6R-vbu" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="32.5" y="277" width="310.5" height="53"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Usuário" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DPA-Xt-53D">
-                                <rect key="frame" x="32.5" y="220" width="310.5" height="47"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.26517016269999999" colorSpace="calibratedRGB"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Usuário" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DPA-Xt-53D" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="32.5" y="193.5" width="310.5" height="53"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <stackView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="HEC-6T-WHk">
-                                <rect key="frame" x="17" y="483.5" width="341.5" height="1.5"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="74z-wd-cMe">
-                                        <rect key="frame" x="0.0" y="0.0" width="146" height="1.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.5"/>
-                                    </view>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVF-3c-fEY">
-                                        <rect key="frame" x="196" y="0.0" width="145.5" height="1.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                </subviews>
+                                <rect key="frame" x="17" y="483" width="341.5" height="2.5"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OU" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyM-Jg-Nlm">
-                                <rect key="frame" x="153" y="460.5" width="69" height="47"/>
+                                <rect key="frame" x="153" y="457.5" width="69" height="53"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -215,15 +228,15 @@
                             <constraint firstItem="uyM-Jg-Nlm" firstAttribute="height" secondItem="p1A-7a-vMA" secondAttribute="height" id="Ule-fm-xgF"/>
                             <constraint firstItem="DPA-Xt-53D" firstAttribute="width" secondItem="Cfc-VJ-adC" secondAttribute="width" multiplier="0.828" id="Upr-pt-jIP"/>
                             <constraint firstItem="aQe-qf-TTC" firstAttribute="height" secondItem="p1A-7a-vMA" secondAttribute="height" id="V5j-6M-Rjy"/>
-                            <constraint firstItem="DPA-Xt-53D" firstAttribute="height" secondItem="Cfc-VJ-adC" secondAttribute="height" multiplier="0.07" id="WHa-it-132"/>
+                            <constraint firstItem="DPA-Xt-53D" firstAttribute="height" secondItem="Cfc-VJ-adC" secondAttribute="height" multiplier="0.08" id="WHa-it-132"/>
                             <constraint firstItem="DPA-Xt-53D" firstAttribute="centerX" secondItem="Cfc-VJ-adC" secondAttribute="centerX" id="WKF-Ex-4AA"/>
                             <constraint firstItem="vwP-fL-wAl" firstAttribute="height" secondItem="Cfc-VJ-adC" secondAttribute="height" multiplier="0.165" id="ZBM-x8-V9v"/>
                             <constraint firstItem="p1A-7a-vMA" firstAttribute="height" secondItem="VQH-6R-vbu" secondAttribute="height" id="aSH-ch-D8w"/>
                             <constraint firstItem="NHj-Ao-RyK" firstAttribute="width" secondItem="p1A-7a-vMA" secondAttribute="width" id="dfv-cY-StT"/>
-                            <constraint firstItem="p1A-7a-vMA" firstAttribute="centerY" secondItem="Cfc-VJ-adC" secondAttribute="centerY" multiplier="1.1" id="dnt-N5-VVe"/>
-                            <constraint firstItem="aQe-qf-TTC" firstAttribute="centerY" secondItem="Cfc-VJ-adC" secondAttribute="centerY" multiplier="1.25" id="eEz-S8-E64"/>
+                            <constraint firstItem="p1A-7a-vMA" firstAttribute="centerY" secondItem="Cfc-VJ-adC" secondAttribute="centerY" multiplier="1.12" id="dnt-N5-VVe"/>
+                            <constraint firstItem="aQe-qf-TTC" firstAttribute="centerY" secondItem="Cfc-VJ-adC" secondAttribute="centerY" multiplier="1.3" id="eEz-S8-E64"/>
                             <constraint firstItem="VQH-6R-vbu" firstAttribute="width" secondItem="DPA-Xt-53D" secondAttribute="width" id="eFl-7S-9UG"/>
-                            <constraint firstItem="DPA-Xt-53D" firstAttribute="centerY" secondItem="Cfc-VJ-adC" secondAttribute="centerY" multiplier="0.73" id="fZp-Bh-phD"/>
+                            <constraint firstItem="DPA-Xt-53D" firstAttribute="centerY" secondItem="Cfc-VJ-adC" secondAttribute="centerY" multiplier="0.66" id="fZp-Bh-phD"/>
                             <constraint firstItem="vwP-fL-wAl" firstAttribute="width" secondItem="Cfc-VJ-adC" secondAttribute="width" multiplier="0.623" id="jUQ-gQ-zMd"/>
                             <constraint firstItem="HEC-6T-WHk" firstAttribute="centerX" secondItem="p1A-7a-vMA" secondAttribute="centerX" id="qmA-0f-it3"/>
                             <constraint firstItem="p1A-7a-vMA" firstAttribute="width" secondItem="VQH-6R-vbu" secondAttribute="width" id="u21-lC-Thy"/>
@@ -235,7 +248,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ghQ-Hs-tRt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-927.20000000000005" y="-0.44977511244377816"/>
+            <point key="canvasLocation" x="-1583" y="0.0"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Z5U-JH-lH3">
+            <objects>
+                <viewController id="dTJ-Uq-BKz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5hf-rI-IXN"/>
+                        <viewControllerLayoutGuide type="bottom" id="bjg-xq-vqx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="awU-xj-vRq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EbF-tV-Ppz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-774" y="0.0"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

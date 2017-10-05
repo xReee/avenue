@@ -15,6 +15,13 @@ target 'Avenue' do
 	pod "Pastel"
 	pod 'FacebookCore'
 	pod 'FacebookLogin'
+	pod “TextFieldEffects”
+	
+	pod 'Firebase/Core'
+	pod 'Firebase/Auth'
+	pod 'Firebase/Storage'
+
+
 
   target 'AvenueUITests' do
     inherit! :search_paths
